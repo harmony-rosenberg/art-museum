@@ -12,9 +12,8 @@ const router = createBrowserRouter([
     path: '/',
     element: <>
     <h2>Harvard Art Museum</h2>
-    <p>Look, but Don't Touch. Please select a Gallery in the navigation bar.</p>
-    </>
-  }
+    <p> Look, but Don&apos;t Touch. Please select a Gallery in the navigation bar.</p> </>
+    }
 ])
 
 function App() {
