@@ -1,22 +1,25 @@
+import React from 'react'; //added
 import { NavLink } from "react-router-dom";
 // console.log('TEST ==>', gallery.galleryid)
 
-const GalleryNavigation = ({galleries}) => {
+function GalleryNavigation({ galleries }) {
 
-	let galleryId = galleries.map(gallery => {
-		
-	gallery.galleryid
-	})
+	// let galleryId = galleries.map(gallery => {
+	// 	<ul>
+	// 		{gallery.galleryid}
+
+	// 	</ul>
+	// })
 
 	return (
-		<nav>
+		<nav> <>
 			<h1>Galleries</h1>
-			<NavLink
-			to={galleryId}
-			// className={}
-			> gallery {galleryId} </NavLink>
+			{galleries.map(gallery => <NavLink to={`${gallery.id}`}> {gallery.name} </NavLink>)}
+			<NavLink to='/'>HOME</NavLink>
+
+		</>
 		</nav>
-)
+	)
 }
 
 
